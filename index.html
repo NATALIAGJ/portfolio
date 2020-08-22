@@ -5,13 +5,23 @@
     <title>Natalia Gonzalez</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/media.css" media="screen and (max-width:729px)"> -->
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+      /* @media screen and (max-width: 768px) {
+        body {
+          border: 10px solid blue;
+        }
+      } */
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+    <i class="icon-menu burger-buttom"></i>
     <header class="header">
       <div class="container">
         <figure class="logo">
-          <img src="/images/logo.png" height="50" alt="Logo de http://leonidasesteban.com">
+          <img src="./images/logo.png" height="50" alt="Logo de http://leonidasesteban.com">
         </figure>
         <nav class="menu">
           <ol>
@@ -33,7 +43,7 @@
         <h1>
           Hola! Soy <strong>Natalia Gonzalez</strong>, <br> desarrolladora de <strong>software </strong> <br> apasionada por <strong>Javascript.</strong>
         </h1>
-        <img class="hero-image" src="/images/hero.jpg" width="500" height="300" alt="Imagne principal de sitio"> 
+        <img class="hero-image" src="./images/hero.jpg" width="500" height="300" alt="Imagne principal de sitio"> 
       </div>
     </section>
     <section id="portfolio" class="portfolio">
@@ -53,7 +63,7 @@
             </p>
           </div>
           <figure class="project-image-container">
-            <img class="project-image" width="500" src="/images/platzi-video-react-native.png" alt="Proyecto del curso de react native">
+            <img class="project-image" width="500" src="./images/platzi-video-react-native.png" alt="Proyecto del curso de react native">
           </figure>
         </article>
         <article class="project">
@@ -70,7 +80,7 @@
             </p>
           </div>
           <figure class="project-image-container">
-            <img class="project-image" width="500" src="/images/platzi-video-react-native.png" alt="Proyecto del curso de react native">
+            <img class="project-image" width="500" src="./images/platzi-video-react-native.png" alt="Proyecto del curso de react native">
           </figure>
         </article>
       </div>
@@ -82,7 +92,10 @@
       <div class="container">
         <article class="experience">
           <figure class="experience-image-container">
-            <img class="experience-image" src="/images/platzi-conf.jpg" width="500"/>
+            <div class="flexible-video">
+              <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/LoKvxCSZw5w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <!-- <img class="experience-image" src="./images/platzi-conf.jpg" width="500"/> -->
           </figure>
           <div class="experience-detail">
             <h3 class="experience-title">PlatziConf Mexico 2018</h3>
@@ -92,7 +105,12 @@
         </article>
         <article class="experience">
           <figure class="experience-image-container">
-            <img class="experience-image" src="/images/platzi-conf.jpg" width="500"/>
+            <!-- <img class="experience-image" src="./images/platzi-conf.jpg" width="500"/> -->
+            <video class="html-video" 
+              src="videos/f8.mp4" width="1280" height="720" controls
+              poster="images/poster.PNG"
+            >
+            </video>
           </figure>
           <div class="experience-detail">
             <h3 class="experience-title">PlatziConf Mexico 2018</h3>
@@ -102,7 +120,7 @@
         </article>
         <article class="experience">
           <figure class="experience-image-container">
-            <img class="experience-image" src="/images/platzi-conf.jpg" width="500"/>
+            <img class="experience-image" src="./images/platzi-conf.jpg" width="500"/>
           </figure>
           <div class="experience-detail">
             <h3 class="experience-title">PlatziConf Mexico 2018</h3>
@@ -112,7 +130,7 @@
         </article>
         <article class="experience">
           <figure class="experience-image-container">
-            <img class="experience-image" src="/images/platzi-conf.jpg" width="500"/>
+            <img class="experience-image" src="./images/platzi-conf.jpg" width="500"/>
           </figure>
           <div class="experience-detail">
             <h3 class="experience-title">PlatziConf Mexico 2018</h3>
@@ -143,7 +161,7 @@
           <p>Curso de desarrollo web online 2018 <img src="images/platzi.png" width="80" alt="Platzi"></p>
         </div>
         <div>
-          Designed with by <a href="https://twitter.com/thespianartist">@thespianartist</a>
+          Designed with 🧡 by <a href="https://twitter.com/thespianartist">@thespianartist</a>
         </div>
       </div>
     </footer>
