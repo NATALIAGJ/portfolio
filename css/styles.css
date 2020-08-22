@@ -357,7 +357,13 @@ figure {
 
 /*Desktop first*/
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
+    .experience-list-title {
+        margin-left: 0;
+    }
+    .portfolio {
+        padding: 0;
+    }
     .container {
         padding: 0 1em;
     }
@@ -383,6 +389,10 @@ figure {
 }
 
 @media screen and (max-width: 767px) {
+    h2 {
+        font-size: 1.2em;
+        margin: .5em 0;
+    }
     .burger-buttom {
         display: block;
     }
@@ -490,7 +500,33 @@ figure {
     }
     .project-details {
         width: auto;
-        font-size: 12px;
+        font-size: 14px;
+    }
+    .experience-detail {
+        margin: -2em .5em .5em;
+        padding: 1em;
+    }
+    .contact {
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+        display: block;
+    }
+    .form-email button {
+        margin: 1em auto;
+    }
+    .form-email {
+        margin-top: 0;
+    }
+    .footer {
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+    }
+    .social-link {
+        width: 40px;
+        height: 40px;
+        background-size: 100%;
     }
 }
 
