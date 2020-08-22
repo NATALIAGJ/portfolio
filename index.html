@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <i class="icon-menu burger-buttom"></i>
+    <i class="icon-menu burger-buttom" id="burger-menu"></i>
     <header class="header">
       <div class="container">
         <figure class="logo">
@@ -165,5 +165,27 @@
         </div>
       </div>
     </footer>
+    <script>
+      const ipad = window.matchMedia('screen and (max-wigth: 767px');
+
+      const menu = document.querySelector('.menu')
+      const burgerButton = document.querySelector('#burger-menu')
+      burgerButton.addEventListener('click', hideShow)
+
+      ipad.addListener(validation)
+
+      function validation () {
+        if (event.matches) {
+          burgerButton.addEventListener('click', hideShow)
+        } else {
+          burgerButton.addEventListener('click', hideShow)
+        }
+      }
+
+      function hideShow() {
+        menu.classList.toggle('is-active')
+      }
+      
+    </script>
   </body>
 </html>
